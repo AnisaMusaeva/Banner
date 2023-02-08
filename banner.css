@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner{
+    position: relative;
+
+    width: 300px;
+    height: 600px;
+    margin: 0;
+
+    background:url('./img/light\ 1.svg') center/cover, url('./img/background1.svg') center/cover;
+
+    overflow: hidden;
+}
+
+
+.header-befor{
+    padding-top: 40px;
+
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D8957;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+
+    transform: translateX(0);
+    transition: transform 4s;
+}
+
+
+.header-befor-animation-on{
+    transform: translateX(-300px);
+}
+
+
+.header-after{
+    position: absolute;
+    top: 75px;
+
+    font-size: 27px;
+    line-height: 37px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D8957;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+
+    transform: translateY(-200px);
+    transition: transform 4s;
+}
+
+
+.header-after-animation-on {
+    transform: translateY(0px);
+}
+
+
+.button-buy{
+    position: absolute;
+    top: 145px;
+    right: 50%;
+
+    width: 133px;
+    height: 37px;
+
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    color: #2D8957;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(#F1F9B7, #C6EC9E);
+    border: 0.83px solid #fff;
+    border-radius: 33px;
+
+    transform: translate(50%, -210px);
+    transition: transform 4s;
+}
+
+
+.button-buy:hover{
+    background-image: linear-gradient(#b1eb73, #C6EC9E)
+}
+
+
+.button-buy-animation-on{
+    transform: translate(50%, 0);
+}
+
+
+.description{
+    margin-top: 10px;
+    margin-bottom: 14px;
+
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #2D8957;
+
+    transition: transform 4s;
+}
+
+
+.description-animation-on{
+    transform: translateX(250px);
+}
+
+
+.tastes{
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.taste{
+    position: relative;
+
+    margin-right: 15px;
+    margin-top: 16px;
+    width: 112px;
+    height: 115px;
+
+    background-image: linear-gradient(#F7FABA, #C5EB9D );
+    border-radius: 27px;
+
+    transform: translateX(0);
+    transition: transform 3s;
+
+    overflow: hidden;
+}
+
+
+.taste-animation-on:nth-child(odd){
+    transform: translateX(-150px);
+}
+
+
+.taste-animation-on:nth-child(even) {
+    transform: translateX(150px);
+}
+
+
+.taste-tea{
+    margin: 11.5px 5.5px 9px 5.8px;
+}
+
+
+.taste-honey{
+    margin: 15px 8.5px 8.1px 8.3px;
+}
+
+
+.taste-orange{
+   margin: 13.8px 15px 16.9px 16.6px 
+}
+
+
+.taste:hover .taste-img{
+    transform: scale(1.1, 1.1);
+}
+
+
+.background-decors-after{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 400px;
+}
+
+
+.background-decor-tea {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 110px;
+    height: 101px;
+
+    background: url('./img/background-decor-tea.png') no-repeat;
+    background-size: contain;
+
+    transform: translateX(-400px);
+    transition: transform 4s;
+}
+
+
+.background-decor-tea-animation-on{
+    transform: translateX(0)
+}
+
+
+.background-decor-honey{
+    position: absolute;
+    bottom: -40px;
+    left: 142px;
+
+    width: 144px;
+    height: 138px;
+
+    background: url('./img/background-decor-honey.png') no-repeat;
+    background-size: contain;
+
+    transform: translateX(200px);
+    transition: transform 4s;
+    z-index: 1;
+}
+
+
+.background-decor-honey-animation-on {
+    transform: translateX(0)
+}
+
+
+.background-decor-water {
+    width: 100%;
+    height: 400px;
+
+    background: url('./img/background-decor-water.png') left bottom no-repeat;
+    transform: translateX(-300px);
+    transition: transform 4s;
+    z-index: 2;
+}
+
+
+.background-decor-water-animation-on {
+    transform: translateX(0);
+}
+
+.none {
+    display: none;
+}
