@@ -75,7 +75,7 @@ ul{
 
 .button-buy{
     position: absolute;
-    top: 145px;
+    top: 155px;
     right: 50%;
 
     width: 133px;
@@ -244,6 +244,7 @@ ul{
     height: 400px;
 
     background: url('./img/background-decor-water.png') left bottom no-repeat;
+    background-size: contain;
     transform: translateX(-300px);
     transition: transform 4s;
     z-index: 2;
